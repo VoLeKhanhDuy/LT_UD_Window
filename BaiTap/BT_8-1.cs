@@ -34,6 +34,10 @@ namespace BT2
                 {
                     Console.WriteLine("Phuong trinh vo nghiem!!");
                 }
+                else
+                {
+                    Console.WriteLine("Phuong trinh co 1 nghiem: " + (-c) / b);
+                }
             }
             else
             {
