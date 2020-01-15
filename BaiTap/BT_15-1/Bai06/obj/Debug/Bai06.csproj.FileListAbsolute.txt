@@ -1,0 +1,6 @@
+c:\Users\Hoc vien\documents\visual studio 2015\Projects\BT_15-1\Bai06\bin\Debug\Bai06.exe.config
+c:\Users\Hoc vien\documents\visual studio 2015\Projects\BT_15-1\Bai06\bin\Debug\Bai06.exe
+c:\Users\Hoc vien\documents\visual studio 2015\Projects\BT_15-1\Bai06\bin\Debug\Bai06.pdb
+c:\Users\Hoc vien\documents\visual studio 2015\Projects\BT_15-1\Bai06\obj\Debug\Bai06.csprojResolveAssemblyReference.cache
+c:\Users\Hoc vien\documents\visual studio 2015\Projects\BT_15-1\Bai06\obj\Debug\Bai06.exe
+c:\Users\Hoc vien\documents\visual studio 2015\Projects\BT_15-1\Bai06\obj\Debug\Bai06.pdb

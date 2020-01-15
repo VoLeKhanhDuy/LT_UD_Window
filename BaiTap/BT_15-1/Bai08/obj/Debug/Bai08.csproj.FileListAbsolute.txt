@@ -1,0 +1,5 @@
+c:\Users\Hoc vien\documents\visual studio 2015\Projects\BT_15-1\Bai08\bin\Debug\Bai08.exe.config
+c:\Users\Hoc vien\documents\visual studio 2015\Projects\BT_15-1\Bai08\bin\Debug\Bai08.exe
+c:\Users\Hoc vien\documents\visual studio 2015\Projects\BT_15-1\Bai08\bin\Debug\Bai08.pdb
+c:\Users\Hoc vien\documents\visual studio 2015\Projects\BT_15-1\Bai08\obj\Debug\Bai08.exe
+c:\Users\Hoc vien\documents\visual studio 2015\Projects\BT_15-1\Bai08\obj\Debug\Bai08.pdb
