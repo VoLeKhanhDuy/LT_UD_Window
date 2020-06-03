@@ -7,3 +7,12 @@ D:\DA17TT\Lập trình ứng dụng Window\BT_3-6-2020\LOP\LOP\obj\Debug\LOP.Pro
 D:\DA17TT\Lập trình ứng dụng Window\BT_3-6-2020\LOP\LOP\obj\Debug\LOP.csproj.GenerateResource.Cache
 D:\DA17TT\Lập trình ứng dụng Window\BT_3-6-2020\LOP\LOP\obj\Debug\LOP.exe
 D:\DA17TT\Lập trình ứng dụng Window\BT_3-6-2020\LOP\LOP\obj\Debug\LOP.pdb
+D:\DA17TT\Lập trình ứng dụng Window\LT_UD_Window\BT_3-6-2020\LOP\LOP\bin\Debug\LOP.exe.config
+D:\DA17TT\Lập trình ứng dụng Window\LT_UD_Window\BT_3-6-2020\LOP\LOP\obj\Debug\LOP.exe
+D:\DA17TT\Lập trình ứng dụng Window\LT_UD_Window\BT_3-6-2020\LOP\LOP\obj\Debug\LOP.pdb
+D:\DA17TT\Lập trình ứng dụng Window\LT_UD_Window\BT_3-6-2020\LOP\LOP\bin\Debug\LOP.exe
+D:\DA17TT\Lập trình ứng dụng Window\LT_UD_Window\BT_3-6-2020\LOP\LOP\bin\Debug\LOP.pdb
+D:\DA17TT\Lập trình ứng dụng Window\LT_UD_Window\BT_3-6-2020\LOP\LOP\obj\Debug\LOP.csprojResolveAssemblyReference.cache
+D:\DA17TT\Lập trình ứng dụng Window\LT_UD_Window\BT_3-6-2020\LOP\LOP\obj\Debug\LOP.Form1.resources
+D:\DA17TT\Lập trình ứng dụng Window\LT_UD_Window\BT_3-6-2020\LOP\LOP\obj\Debug\LOP.Properties.Resources.resources
+D:\DA17TT\Lập trình ứng dụng Window\LT_UD_Window\BT_3-6-2020\LOP\LOP\obj\Debug\LOP.csproj.GenerateResource.Cache

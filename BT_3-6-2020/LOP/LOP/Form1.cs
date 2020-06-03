@@ -22,6 +22,9 @@ namespace LOP
 
         public void hienThiDuLieu()
         {
+            txt_MaLop.Text = "";
+            txt_TenLop.Text = "";
+            txt_MaLop.ReadOnly = false;
             DataTable bangLop = new DataTable();
             String sql = "select * from TB_LOP";
             bangLop = csdl.LayBang(sql);
@@ -49,19 +52,7 @@ namespace LOP
 
         private void btn_Them_Click(object sender, EventArgs e)
         {
-            String maLop = txt_MaLop.Text;
-            String tenLop = txt_TenLop.Text;
-
-            String sql = "insert into TB_LOP values('" + maLop + "', N'" + tenLop + "')";
-
-            if (csdl.CapnhatCSDL(sql))
-            {
-                MessageBox.Show("Thêm thành công!");
-            }
-            else
-            {
-                MessageBox.Show("Thêm thất bại!");
-            }
+  
             hienThiDuLieu();
         }
 
