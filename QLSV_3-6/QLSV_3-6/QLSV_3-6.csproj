@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FCC1C395-C083-4D4D-8313-0E14F05CC39F}</ProjectGuid>
+    <ProjectGuid>{6B411709-95CD-43B1-9D91-FF6A55F2BF4E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LOP</RootNamespace>
-    <AssemblyName>LOP</AssemblyName>
+    <RootNamespace>QLSV_3_6</RootNamespace>
+    <AssemblyName>QLSV_3-6</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,35 +46,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="frm_Lop.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frm_Lop.Designer.cs">
+      <DependentUpon>frm_Lop.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_Chinh.cs">
+    <Compile Include="frm_SinhVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_Chinh.Designer.cs">
-      <DependentUpon>Form_Chinh.cs</DependentUpon>
+    <Compile Include="frm_SinhVien.Designer.cs">
+      <DependentUpon>frm_SinhVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_SinhVien.cs">
+    <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_SinhVien.Designer.cs">
-      <DependentUpon>Form_SinhVien.cs</DependentUpon>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ket_Noi_CSDL.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="TV_kncsdl.cs" />
+    <EmbeddedResource Include="frm_Lop.resx">
+      <DependentUpon>frm_Lop.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_Chinh.resx">
-      <DependentUpon>Form_Chinh.cs</DependentUpon>
+    <EmbeddedResource Include="frm_SinhVien.resx">
+      <DependentUpon>frm_SinhVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_SinhVien.resx">
-      <DependentUpon>Form_SinhVien.cs</DependentUpon>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

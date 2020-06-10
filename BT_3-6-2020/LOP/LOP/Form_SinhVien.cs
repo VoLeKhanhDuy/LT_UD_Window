@@ -10,34 +10,31 @@ using System.Windows.Forms;
 
 namespace LOP
 {
-    public partial class Form1 : Form
+    public partial class Form_SinhVien : Form
     {
         Ket_Noi_CSDL csdl = new Ket_Noi_CSDL();
 
-        public Form1()
+        public Form_SinhVien()
         {
             InitializeComponent();
+            string sql = "select * from TB_LOP";
+            cb_MaLop.DataSource = csdl.LayBang(sql);
+            cb_MaLop.DisplayMember = "TenLop";
+            cb_MaLop.ValueMember = "MaLop";
             hienThiDuLieu();
         }
 
         public void hienThiDuLieu()
         {
-            txt_MaLop.Text = "";
-            txt_TenLop.Text = "";
-            txt_MaLop.ReadOnly = false;
+            txt_MaSV.Text = "";
+            txt_TenSV.Text = "";
+            txt_MaSV.ReadOnly = false;
             DataTable bangLop = new DataTable();
-            String sql = "select * from TB_LOP";
+            String sql = "select * from TB_SinhVien";
             bangLop = csdl.LayBang(sql);
             dgv_lop.DataSource = bangLop;
         }
-        
-
-        private void btn_Thoat_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
+        private void Form_SinhVien_Load(object sender, EventArgs e)
         {
 
         }
@@ -45,21 +42,15 @@ namespace LOP
         private void dgv_lop_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             int index = e.RowIndex;
-            txt_MaLop.Text = dgv_lop.Rows[index].Cells[0].Value.ToString();
-            txt_TenLop.Text = dgv_lop.Rows[index].Cells[1].Value.ToString();
-            txt_MaLop.ReadOnly = true;
-        }
-
-        private void btn_Them_Click(object sender, EventArgs e)
-        {
-  
-            hienThiDuLieu();
+            txt_MaSV.Text = dgv_lop.Rows[index].Cells[0].Value.ToString();
+            txt_TenSV.Text = dgv_lop.Rows[index].Cells[1].Value.ToString();
+            txt_MaSV.ReadOnly = true;
         }
 
         private void btn_Sua_Click(object sender, EventArgs e)
         {
-            String maLop = txt_MaLop.Text;
-            String tenLop = txt_TenLop.Text;
+            String maLop = txt_MaSV.Text;
+            String tenLop = txt_TenSV.Text;
 
             String sql = "update TB_LOP set TenLop = N'" + tenLop + "' where MaLop = '" + maLop + "'";
 
@@ -76,8 +67,8 @@ namespace LOP
 
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
-            String maLop = txt_MaLop.Text;
-        
+            String maLop = txt_MaSV.Text;
+
 
             String sql = "delete TB_LOP where MaLop = '" + maLop + "'";
             if (csdl.CapnhatCSDL(sql))
@@ -93,8 +84,8 @@ namespace LOP
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
-            String maLop = txt_MaLop.Text;
-            String tenLop = txt_TenLop.Text;
+            String maLop = txt_MaSV.Text;
+            String tenLop = txt_TenSV.Text;
 
             String sql = "insert into TB_LOP values('" + maLop + "', N'" + tenLop + "')";
             if (csdl.CapnhatCSDL(sql))
@@ -108,8 +99,6 @@ namespace LOP
             hienThiDuLieu();
         }
 
-
-
         private void button(bool them, bool xoa, bool sua, bool thoat, bool luu, bool huy, bool maLop, bool tenLop)
         {
             btn_Them.Enabled = them;
@@ -118,13 +107,8 @@ namespace LOP
             btn_Thoat.Enabled = thoat;
             btn_Luu.Enabled = luu;
             btn_Huy.Enabled = huy;
-            txt_MaLop.Enabled = maLop;
-            txt_TenLop.Enabled = tenLop;
-        }
-
-        private void txt_TenLop_TextChanged(object sender, EventArgs e)
-        {
-
+            txt_MaSV.Enabled = maLop;
+            txt_TenSV.Enabled = tenLop;
         }
     }
 }

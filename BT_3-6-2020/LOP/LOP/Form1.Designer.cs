@@ -39,13 +39,14 @@
             this.btn_Thoat = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.btn_Luu = new System.Windows.Forms.Button();
+            this.btn_Huy = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_lop)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_Them
             // 
             this.btn_Them.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Them.Location = new System.Drawing.Point(54, 271);
+            this.btn_Them.Location = new System.Drawing.Point(50, 139);
             this.btn_Them.Name = "btn_Them";
             this.btn_Them.Size = new System.Drawing.Size(75, 23);
             this.btn_Them.TabIndex = 0;
@@ -75,24 +76,25 @@
             this.dgv_lop.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_lop.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
             this.dgv_lop.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_lop.Location = new System.Drawing.Point(54, 102);
+            this.dgv_lop.Location = new System.Drawing.Point(229, 64);
             this.dgv_lop.Name = "dgv_lop";
-            this.dgv_lop.Size = new System.Drawing.Size(430, 150);
+            this.dgv_lop.Size = new System.Drawing.Size(272, 156);
             this.dgv_lop.TabIndex = 3;
             this.dgv_lop.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_lop_CellContentClick);
             // 
             // txt_TenLop
             // 
-            this.txt_TenLop.Location = new System.Drawing.Point(299, 64);
+            this.txt_TenLop.Location = new System.Drawing.Point(99, 102);
             this.txt_TenLop.Name = "txt_TenLop";
-            this.txt_TenLop.Size = new System.Drawing.Size(185, 20);
+            this.txt_TenLop.Size = new System.Drawing.Size(111, 20);
             this.txt_TenLop.TabIndex = 5;
+            this.txt_TenLop.TextChanged += new System.EventHandler(this.txt_TenLop_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(247, 67);
+            this.label2.Location = new System.Drawing.Point(47, 105);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 13);
             this.label2.TabIndex = 4;
@@ -101,7 +103,7 @@
             // btn_Xoa
             // 
             this.btn_Xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Xoa.Location = new System.Drawing.Point(234, 271);
+            this.btn_Xoa.Location = new System.Drawing.Point(50, 168);
             this.btn_Xoa.Name = "btn_Xoa";
             this.btn_Xoa.Size = new System.Drawing.Size(75, 23);
             this.btn_Xoa.TabIndex = 6;
@@ -112,7 +114,7 @@
             // btn_Sua
             // 
             this.btn_Sua.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Sua.Location = new System.Drawing.Point(144, 271);
+            this.btn_Sua.Location = new System.Drawing.Point(135, 139);
             this.btn_Sua.Name = "btn_Sua";
             this.btn_Sua.Size = new System.Drawing.Size(75, 23);
             this.btn_Sua.TabIndex = 7;
@@ -123,7 +125,7 @@
             // btn_Thoat
             // 
             this.btn_Thoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Thoat.Location = new System.Drawing.Point(322, 271);
+            this.btn_Thoat.Location = new System.Drawing.Point(135, 168);
             this.btn_Thoat.Name = "btn_Thoat";
             this.btn_Thoat.Size = new System.Drawing.Size(75, 23);
             this.btn_Thoat.TabIndex = 9;
@@ -145,7 +147,7 @@
             // btn_Luu
             // 
             this.btn_Luu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Luu.Location = new System.Drawing.Point(409, 271);
+            this.btn_Luu.Location = new System.Drawing.Point(50, 197);
             this.btn_Luu.Name = "btn_Luu";
             this.btn_Luu.Size = new System.Drawing.Size(75, 23);
             this.btn_Luu.TabIndex = 11;
@@ -153,11 +155,22 @@
             this.btn_Luu.UseVisualStyleBackColor = true;
             this.btn_Luu.Click += new System.EventHandler(this.btn_Luu_Click);
             // 
+            // btn_Huy
+            // 
+            this.btn_Huy.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Huy.Location = new System.Drawing.Point(135, 197);
+            this.btn_Huy.Name = "btn_Huy";
+            this.btn_Huy.Size = new System.Drawing.Size(75, 23);
+            this.btn_Huy.TabIndex = 12;
+            this.btn_Huy.Text = "Hủy";
+            this.btn_Huy.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(513, 307);
+            this.ClientSize = new System.Drawing.Size(513, 254);
+            this.Controls.Add(this.btn_Huy);
             this.Controls.Add(this.btn_Luu);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btn_Thoat);
@@ -191,6 +204,7 @@
         private System.Windows.Forms.Button btn_Thoat;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btn_Luu;
+        private System.Windows.Forms.Button btn_Huy;
     }
 }
 
